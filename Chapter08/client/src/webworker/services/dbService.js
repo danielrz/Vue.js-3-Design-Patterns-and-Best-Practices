@@ -2,7 +2,6 @@ import Dexie from "dexie"
 
 // Start up database
 const db=new Dexie("Notes")
-
 // DB versioning
 db.version(1).stores({
     notes: "++id,title" // Makes "title" searchable
